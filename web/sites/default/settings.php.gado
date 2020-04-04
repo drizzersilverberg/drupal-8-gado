@@ -1,0 +1,29 @@
+<?php
+
+$databases = [];
+$settings['hash_salt'] = 'fp5-sq3b5G-KNf3JJvuVpegD-fFbY5Kzd-AiuA1_JEpKhm-I_CHkUABHyddMKh2MkzRg4H_nYQ';
+$settings['update_free_access'] = FALSE;
+$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['file_scan_ignore_directories'] = [
+  'node_modules',
+  'bower_components',
+];
+
+$settings['entity_update_batch_size'] = 50;
+$settings['entity_update_backup'] = TRUE;
+
+$config['system.logging']['error_level'] = 'verbose';
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+
+$databases['default']['default'] = array (
+  'database' => 'gado_drupal_8',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'mysql',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_8VE7_JpXUi_GOXF967sfIgfZXkr3X4DWllVSvNYPw1KtRPzcGuNbhxNeYXTSA6XLjCB8QU20BA/sync';
