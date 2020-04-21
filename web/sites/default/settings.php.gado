@@ -1,6 +1,5 @@
 <?php
 
-$databases = [];
 $settings['hash_salt'] = 'fp5-sq3b5G-KNf3JJvuVpegD-fFbY5Kzd-AiuA1_JEpKhm-I_CHkUABHyddMKh2MkzRg4H_nYQ';
 $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
@@ -11,6 +10,16 @@ $settings['file_scan_ignore_directories'] = [
 
 $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
+$settings['config_sync_directory'] = 'sites/default/files/config_8VE7_JpXUi_GOXF967sfIgfZXkr3X4DWllVSvNYPw1KtRPzcGuNbhxNeYXTSA6XLjCB8QU20BA/sync';
+
+$config['smtp.settings']['smtp_on'] = 1; // 1/0
+$config['smtp.settings']['smtp_host'] = 'mailhog';
+$config['smtp.settings']['smtp_port'] = 1025;
+$config['smtp.settings']['smtp_protocol'] = 'standard'; // standard/ssl/tls
+$config['smtp.settings']['smtp_username'] = 'null';
+$config['smtp.settings']['smtp_password'] = 'null';
+$config['smtp.settings']['smtp_from'] = 'no-reply@drupal-8-gado.local';
+$config['smtp.settings']['smtp_fromname'] = 'Drupal 8 Gado';
 
 $config['system.logging']['error_level'] = 'verbose';
 $config['system.performance']['css']['preprocess'] = FALSE;
@@ -26,4 +35,3 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_8VE7_JpXUi_GOXF967sfIgfZXkr3X4DWllVSvNYPw1KtRPzcGuNbhxNeYXTSA6XLjCB8QU20BA/sync';
