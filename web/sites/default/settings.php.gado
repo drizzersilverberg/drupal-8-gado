@@ -10,7 +10,7 @@ $settings['file_scan_ignore_directories'] = [
 
 $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
-$settings['config_sync_directory'] = 'sites/default/files/config_8VE7_JpXUi_GOXF967sfIgfZXkr3X4DWllVSvNYPw1KtRPzcGuNbhxNeYXTSA6XLjCB8QU20BA/sync';
+$settings['config_sync_directory'] = "{$app_root}/../config/sync";
 
 $config['smtp.settings']['smtp_on'] = 1; // 1/0
 $config['smtp.settings']['smtp_host'] = 'mailhog';
