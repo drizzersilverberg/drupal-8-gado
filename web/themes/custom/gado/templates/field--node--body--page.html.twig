@@ -46,24 +46,24 @@
 
 {% if label_hidden %}
 	{% if multiple %}
-		<div{{attributes}}>
+		<div{{attributes}} data-debug="lorem">
 			{% for item in items %}
-				<div{{item.attributes}}>{{ item.content }}</div>
+				<div{{item.attributes}} data-debug="ipsum">{{ item.content }}</div>
 			{% endfor %}
 		</div>
 	{% else %}
 		{% for item in items %}
-			<div{{attributes}}>{{ item.content }}</div>
+			<div{{attributes}} data-debug="dolor">{{ item.content }}</div>
 		{% endfor %}
 	{% endif %}
 {% else %}
-	<div{{attributes}}>
-		<div{{title_attributes.addClass(title_classes)}}>{{ label }}</div>
+	<div{{attributes}} data-debug="sit">
+		<div{{title_attributes.addClass(title_classes)}} data-debug="amet">{{ label }}</div>
 		{% if multiple %}
-			<div>
+			<div data-debug="consectetur">
 			{% endif %}
 			{% for item in items %}
-				<div{{item.attributes}}>{{ item.content }}</div>
+				<div{{item.attributes}} data-debug="adipiscing">{{ item.content }}</div>
 			{% endfor %}
 			{% if multiple %}
 			</div>
