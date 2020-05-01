@@ -24,6 +24,7 @@
         "drupal/core-recommended": "^8.8",
         "drupal/devel": "^2.1",
         "drupal/smtp": "^1.0@beta",
+        "drupal/tailwindcss": "^2.4",
         "drush/drush": "^10.2"
     },
     "require-dev": {
