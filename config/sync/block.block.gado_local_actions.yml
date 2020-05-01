@@ -1,0 +1,20 @@
+uuid: 8507b590-f2a1-4ae6-8e6a-0d26b4ae3047
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gado
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gado_local_actions
+theme: gado
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

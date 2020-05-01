@@ -1,0 +1,22 @@
+uuid: c3480cb3-b219-4f33-9775-471418104ae7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gado
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gado_help
+theme: gado
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
