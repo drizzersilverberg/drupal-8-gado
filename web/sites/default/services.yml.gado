@@ -14,7 +14,7 @@ parameters:
       max-age: 0
       contexts: ['session', 'user']
       tags: []
-  http.response.debug_cacheability_headers: false
+  http.response.debug_cacheability_headers: true
   factory.keyvalue:
     {}
   factory.keyvalue.expirable:
@@ -41,3 +41,6 @@ parameters:
     exposedHeaders: false
     maxAge: false
     supportsCredentials: false
+services:
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
