@@ -1,0 +1,6 @@
+name: Gado Theme
+type: theme
+description: 'Custom theme with tailwindcss as base theme.'
+version: '8.x-1.0'
+core: '8.x'
+base theme: tailwindcss
