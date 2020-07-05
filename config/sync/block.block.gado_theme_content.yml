@@ -1,0 +1,22 @@
+uuid: b52e05a6-7532-4f69-bf6d-a74d4f85869f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gado_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gado_theme_content
+theme: gado_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

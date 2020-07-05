@@ -1,0 +1,20 @@
+uuid: bbe5374f-1d64-4a2e-875c-8687d27ef573
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gado_theme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: gado_theme_page_title
+theme: gado_theme
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
