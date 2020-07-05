@@ -5,7 +5,7 @@
  * Contains Drupal\welcome\Form\MessagesForm.  
  */
 
-namespace Drupal\welcome\Form;
+namespace Drupal\gado_module\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -18,7 +18,7 @@ class MessagesForm extends ConfigFormBase
     protected function getEditableConfigNames()
     {
         return [
-            'welcome.adminsettings',
+            'gado_module.adminsettings',
         ];
     }
 
@@ -35,7 +35,7 @@ class MessagesForm extends ConfigFormBase
      */
     public function buildForm(array $form, FormStateInterface $form_state)
     {
-        $config = $this->config('welcome.adminsettings');
+        $config = $this->config('gado_module.adminsettings');
 
         $form['welcome_message'] = [
             '#type' => 'textarea',
@@ -54,7 +54,7 @@ class MessagesForm extends ConfigFormBase
     {
         parent::submitForm($form, $form_state);
 
-        $this->config('welcome.adminsettings')
+        $this->config('gado_module.adminsettings')
             ->set('welcome_message', $form_state->getValue('welcome_message'))
             ->save();
     }

@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Contains gado_module.module.
+ */
+
+function gado_module_user_login($account)
+{
+    $config = \Drupal::config('gado_module.adminsettings');
+    drupal_set_message($config->get('welcome_message'));
+}

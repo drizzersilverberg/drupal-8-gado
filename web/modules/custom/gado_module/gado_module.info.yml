@@ -1,0 +1,5 @@
+name: Gado Module  
+type: module  
+description: Module for various learning experimentations
+core: 8.x  
+package: Custom  
