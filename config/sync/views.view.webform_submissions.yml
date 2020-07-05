@@ -1,4 +1,4 @@
-uuid: 665683a6-9b05-471a-821c-426e35566569
+uuid: 5c3ce020-57b0-4f2c-b38c-8f87ba1a0010
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - user
     - webform
 _core:
-  default_config_hash: _7B5YYODi_--G_tOWLcRmuuWsNsOFtDfntkEuwJWQq0
+  default_config_hash: YPgxGC8TmLtfCOLGCCHJcdH2llA7QksUkdi1abhB7Ro
 id: webform_submissions
 label: 'Webform submissions'
 module: views

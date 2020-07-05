@@ -1,4 +1,4 @@
-uuid: 62657bc9-87b0-42cf-8302-febe94464da0
+uuid: 707ea6bd-a6fa-4b66-94d3-2265294290c4
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - admin@drupal8gado.com
+  - dendihandian@gmail.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
