@@ -8,5 +8,5 @@ A Drupal 8 project to implement any kind of drupal features for learning purpose
 1. Run `composer install`.
 1. Duplicate `web\sites\default\settings.php.gado` into `web\sites\default\settings.php` 
 1. Duplicate `web\sites\default\services.yml.gado` into `web\sites\default\services.yml` and configure the settings for your own local development.
-1. Open the web in your browser to begin and setup it.
+1. Run `/vendor/bin/drush si` to begin site install.
 1. Run `./vendor/bin/drush cim` to import the implemented features of the project.
