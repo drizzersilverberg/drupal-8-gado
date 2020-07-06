@@ -9,4 +9,5 @@ A Drupal 8 project to implement any kind of drupal features for learning purpose
 1. Duplicate `web\sites\default\settings.php.gado` into `web\sites\default\settings.php` 
 1. Duplicate `web\sites\default\services.yml.gado` into `web\sites\default\services.yml` and configure the settings for your own local development.
 1. Run `/vendor/bin/drush si` to begin site install.
-1. Run `./vendor/bin/drush cim` to import the implemented features of the project.
+2. Temporary: Run `./vendor/bin/drush config-set "system.site" uuid 8d205929-5213-4226-a3cf-b8ffcb21b55d`
+3. Run `./vendor/bin/drush cim` to import the implemented features of the project.
